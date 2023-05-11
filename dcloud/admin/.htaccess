@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^edit_user/([0-9a-zA-z]+)/([0-9a-zA-z]+) edit_user.php?uid=$1

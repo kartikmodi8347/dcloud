@@ -1,0 +1,17 @@
+RewriteEngine On
+
+RewriteRule ^share_view/([0-9a-zA-z]+)/([0-9a-zA-z]+) share_view.php?dir=$1&share_id=$2
+RewriteRule ^file_area/([0-9a-zA-z]+) file_area.php?dir=$1
+RewriteRule ^delete_folder/([0-9a-zA-z]+) delete_folder.php?dir=$1
+RewriteRule ^delete_doc/([0-9a-zA-z]+) delete_doc.php?dir=$1
+
+RewriteRule ^share_select/([0-9a-zA-z]+) share_select.php?dir=$1
+RewriteRule ^public_share/([0-9a-zA-z]+) public_share.php?sid=$1
+RewriteRule ^share_link/([0-9a-zA-z]+) share_link.php?sid=$1
+RewriteRule ^group/([0-9a-zA-z]+) group_profile.php?grp_id=$1
+RewriteRule ^group_doc/([0-9a-zA-z]+) group_doc.php?share_id=$1&dir=$2&grp_id=$3
+RewriteRule ^group_share/([0-9a-zA-z]+) group_share.php?share_id=$1
+RewriteRule ^add_member/([0-9a-zA-z]+) group_addm.php?grp_id=$1
+RewriteRule ^add_admin/([0-9a-zA-z]+) group_admin.php?grp_id=$1
+RewriteRule ^join_group/([0-9a-zA-z]+) join_grp.php?grp_id=$1
+

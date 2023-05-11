@@ -1,0 +1,36 @@
+application/x-zip-compressed = zip
+application/octet-stream = RAR
+
+application/pdf = pdf
+text/plain = notepade
+ 
+application/vnd.openxmlformats-officedocument.wordprocessingml.document = msword 
+application/msaccess =msdatabase 
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet = exel 
+application/vnd.openxmlformats-officedocument.presentationml.presentation = ppt 
+application/vnd.ms-publisher = publisher 
+  
+image
+image/png
+image/jpeg
+image/jpg
+image/gif
+image/svg
+image/ico
+image/bmp
+image/ai // adobe illustrator
+
+audio
+audio/mpeg
+audio/wav
+
+limit 8mb
+
+
+upload_max_filesize = 2M > 200M
+
+
+// echo '<script type="text/javascript">';
+// echo 'window.location.href="public_share.php?sid='.$share_id.'";';
+// echo '</script>';
+echo '<meta http-equiv="refresh" content="0;url=public_share.php?sid='.$share_id.'"/>';
